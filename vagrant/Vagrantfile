@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   config.vm.define "puppet" do |puppet|
     # Puppetmaster on CentOS 7
     config.vm.provider "virtualbox" do |v|
-      v.memory = 2048
+      v.memory = 3072
     end
     puppet.vm.synced_folder ".", "/vagrant"
     puppet.vm.synced_folder "../code", "/puppet_code"
@@ -27,7 +27,7 @@ Vagrant.configure(2) do |config|
       sudo ln -s /puppet_code /etc/puppetlabs/code
       sudo rm -rf /etc/puppetlabs/puppetserver
       sudo ln -s /puppet_puppetserver /etc/puppetlabs/puppetserver
-      sudo sed -i 's/2g/512m/g' /etc/sysconfig/puppetserver
+      #sudo sed -i 's/2g/512m/g' /etc/sysconfig/puppetserver
       echo "*.example.com" | sudo tee /etc/puppetlabs/puppet/autosign.conf
       sudo service puppetserver start
     SHELL
