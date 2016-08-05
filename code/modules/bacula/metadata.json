@@ -1,7 +1,7 @@
 {
   "name": "dvla-bacula",
   "version": "0.1.0",
-  "author": "Venkat Purushothama(venkat.purushothama@digital.dvla.gov.uk)",
+  "author": "Venkat Purushothama(venkat.devops@gmail.com)",
   "summary": "A simple bacula server and client setup module",
   "license": "Apache-2.0",
   "source": "https://github.com/venkat-devops/puppet-developer.git",
@@ -12,4 +12,3 @@
   ],
   "data_provider": null
 }
-
