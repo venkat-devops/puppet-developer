@@ -1,0 +1,17 @@
+# Install via
+# bundle install --path vendor/gems
+#
+# See http://bombasticmonkey.com/2011/11/04/test-your-puppet-modules-functions/
+source "https://rubygems.org"
+
+gem "mocha", :require => false
+# gem 'puppet',   	'>= 3.8.1'
+gem "puppet", ENV['PUPPET_VERSION'] || '3.8.4'
+gem 'puppet-lint'
+gem 'facter',   	'>= 1.6.10'
+gem 'rspec-puppet'
+gem 'rake'
+gem 'puppetlabs_spec_helper'
+gem 'test-unit'
+gem 'rspec'
+gem 'puppet-syntax'

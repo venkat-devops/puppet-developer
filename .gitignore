@@ -1,3 +1,5 @@
 .DS_Store
 vagrant/.vagrant
 .vagrant
+code/modules/bacula/vendor
+code/modules/bacula/.bundle
